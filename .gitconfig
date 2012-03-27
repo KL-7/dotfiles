@@ -1,0 +1,60 @@
+[user]
+    name = Kirill Lashuk
+    email = kirill.lashuk@gmail.com
+
+#[svn]
+#    authorsfile = /home/kl-7/.git-svn.authorsfile
+
+[alias]
+    br = branch
+    ci = commit
+    co = checkout
+    df = diff
+    lg = log
+    st = status
+    dc = diff --cached
+    graph = log --graph --oneline --decorate
+    sum = log --oneline
+    unstage = reset HEAD --
+    wtf = !git-wtf
+
+[core]
+    editor = vim -c start
+#    autocrlf = input
+    excludesfile = ~/.gitexclude
+
+[diff]
+    tool = vimdiff_ro
+
+[difftool]
+    prompt = false
+
+[difftool "vimdiff_ro"]
+    cmd = vimdiff -R $LOCAL $REMOTE
+
+[merge]
+    tool = vimdiff
+
+[mergetool]
+    keepBackup = false
+
+[color]
+    ui = true
+
+[color "diff"]
+    new = green bold
+    old = red bold
+    meta = cyan bold
+    frag = magenta bold
+
+[color "branch"]
+    current = green bold reverse
+    local = green bold
+    remote = magenta bold
+
+[color "status"]
+    added = yellow bold
+    changed = green bold
+    untracked = red bold
+[push]
+    default = current

@@ -1,0 +1,2 @@
+# Control-R reverse history search for irb
+bind "^R" em-inc-search-prev

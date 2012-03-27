@@ -1,0 +1,10 @@
+*~
+.*.swp
+.rvmrc
+.classpath
+.project
+.pydevproject
+.settings/
+.idea/
+.redcar/
+.DS_Store
