@@ -30,4 +30,5 @@
 .ssh/
 .subversion_IDEA/
 .vim/_misc
+.vim/.netrwhist
 .viminfo
