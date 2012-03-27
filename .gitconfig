@@ -2,9 +2,6 @@
     name = Kirill Lashuk
     email = kirill.lashuk@gmail.com
 
-#[svn]
-#    authorsfile = /home/kl-7/.git-svn.authorsfile
-
 [alias]
     br = branch
     ci = commit
@@ -20,8 +17,8 @@
 
 [core]
     editor = vim -c start
-#    autocrlf = input
     excludesfile = ~/.gitexclude
+#    autocrlf = input
 
 [diff]
     tool = vimdiff_ro
