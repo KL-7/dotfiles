@@ -18,7 +18,6 @@
 [core]
     editor = vim -c start
     excludesfile = ~/.gitexclude
-#    autocrlf = input
 
 [diff]
     tool = vimdiff_ro
@@ -53,5 +52,3 @@
     added = yellow bold
     changed = green bold
     untracked = red bold
-[push]
-    default = current
