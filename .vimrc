@@ -25,6 +25,7 @@ set expandtab
 set autowrite
 set autowriteall
 
+set ruler
 set number
 set showcmd
 set nowrap
