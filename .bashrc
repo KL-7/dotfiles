@@ -1,12 +1,18 @@
-# Aliases
+### Aliases ###
+
+# General
 alias ll="ls -lAh"
 alias g="git"
+alias u="history -n" # reload bash history from ~/.bash_history
+
+# Ruby & Rails
 alias rs="rails s"
 alias rc="rails c"
-alias rcd="RAILS_ENV=development rails c"
-alias raked="RAILS_ENV=development rake"
-alias u="history -n" # reload bash history from ~/.bash_history
 alias be="bundle exec"
+alias bi="bundle install"
+alias devenv="RAILS_ENV=development "
+alias rcdev="RAILS_ENV=development rails c"
+alias rakedev="RAILS_ENV=development rake"
 
 # Completion for git `g` alias.
 complete -o default -o nospace -F _git g

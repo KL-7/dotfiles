@@ -12,6 +12,9 @@ PATH=$PATH:$HOME/.rvm/bin
 # Add Qt binaries to PATH
 PATH=$PATH:$HOME/Opt/qt/sdk-1.2/Desktop/Qt/4.8.0/gcc/bin/
 
+export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-packages
+export PYTHONSTARTUP=~/.pythonrc
+
 function bundle_local() {
   export BUNDLE_GEMFILE='.Gemfile.local'; echo ".Gemfile.local is being used..."
 }
