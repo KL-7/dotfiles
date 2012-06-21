@@ -18,7 +18,9 @@ alias rakedev="RAILS_ENV=development rake"
 complete -o default -o nospace -F _git g
 
 # Prompt
-export PS1="\[\033[032m\]\u@\h\[\033[00m\]:\[\033[01;33m\]\W\[\033[036m\]\$(__git_ps1 '(%s)')\[\033[00m\]\$ "
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+export PS1="\[\033[032m\]\u@\h\[\033[00m\]:\[\033[01;33m\]\W\[\033[036m\]\$(__git_ps1 '[%s]')\[\033[00m\]\$ "
 #export PS1="\u@\h:\W$(__git_ps1 "(%s)") $ "
 
 # Git autocompletion
