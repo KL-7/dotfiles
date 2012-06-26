@@ -10,7 +10,9 @@ PATH=/usr/local/bin:$PATH
 PATH=$PATH:$HOME/.rvm/bin
 
 # Add Qt binaries to PATH
-PATH=$PATH:$HOME/Opt/qt/sdk-1.2/Desktop/Qt/4.8.0/gcc/bin/
+# PATH=$PATH:$HOME/usr/local/qt/Desktop/Qt/4.8.1/gcc/bin/
+
+export EDITOR=vim
 
 export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-packages
 export PYTHONSTARTUP=~/.pythonrc
