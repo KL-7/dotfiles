@@ -17,6 +17,8 @@ export EDITOR=vim
 export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-packages
 export PYTHONSTARTUP=~/.pythonrc
 
+export NODE_PATH="/usr/local/lib/node_modules"
+
 function bundle_local() {
   export BUNDLE_GEMFILE='.Gemfile.local'; echo ".Gemfile.local is being used..."
 }
