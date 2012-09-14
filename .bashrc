@@ -25,6 +25,7 @@ export PS1="\[\033[032m\]\u@\h\[\033[00m\]:\[\033[01;33m\]\W\[\033[036m\]\$(__gi
 
 # Git autocompletion
 source `brew --prefix git`/etc/bash_completion.d/git-completion.bash
+source `brew --prefix git`/etc/bash_completion.d/git-prompt.sh
 
 # Globally synchronize bash history after every command (http://briancarper.net/blog/248/)
 shopt -s histappend
