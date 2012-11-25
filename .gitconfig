@@ -11,7 +11,7 @@
     dc = diff --cached
     df = diff
     glg = !git-graph-log
-    graph = log --graph --oneline --decorate
+    graph = log --graph --oneline --decorate --date-order
     lg = log
     st = status
     sum = log --oneline
