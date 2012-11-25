@@ -1,0 +1,9 @@
+#!/bin/bash
+
+ruby -e '
+
+left  = `git log --graph --oneline --decorate --date-order --color=always`.lines
+right = `git log --graph --oneline --decorate --date-order --pretty=format:"%C(bold green)(%cr)%C(reset) %C(bold cyan)<%an>%C(reset)"`.lines
+puts left.zip(right).map { |l, r| "#{l.chop} #{r[/^[\s\*\\|\/_]*(.*)$/, 1]}" }
+
+' | less

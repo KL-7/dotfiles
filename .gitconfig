@@ -3,14 +3,17 @@
     email = kirill.lashuk@gmail.com
 
 [alias]
+    aa = add --all
+    au = add --update
     br = branch
     ci = commit
     co = checkout
+    dc = diff --cached
     df = diff
+    glg = !git-graph-log
+    graph = log --graph --oneline --decorate
     lg = log
     st = status
-    dc = diff --cached
-    graph = log --graph --oneline --decorate
     sum = log --oneline
     unstage = reset HEAD --
     wtf = !git-wtf
