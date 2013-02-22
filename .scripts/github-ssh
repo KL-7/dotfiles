@@ -1,0 +1,8 @@
+#!/bin/bash
+if [[ $PWD =~ "work/madness" ]] ; then
+  ssh_key=klashuk_itran_rsa
+else
+  ssh_key=klashuk_gmail_rsa
+fi
+
+/usr/bin/env ssh -q -2 -o "StrictHostKeyChecking=yes" -i "$HOME/.ssh/$ssh_key" $1 $2
