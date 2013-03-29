@@ -5,4 +5,4 @@ else
   git_email=kirill.lashuk@gmail.com
 fi
 
-GIT_AUTHOR_EMAIL=$git_email GIT_COMMITTER_EMAIL=$git_email /usr/bin/git "$@"
+GIT_AUTHOR_EMAIL=$git_email GIT_COMMITTER_EMAIL=$git_email git "$@"
