@@ -3,8 +3,8 @@ source ~/.bashrc
 # ANSI colors
 export LESS=' -R '
 
-# Brew path
-PATH=/usr/local/bin:$PATH
+# Custom bin and homebrew paths
+PATH=$HOME/.bin:/usr/local/bin:$PATH
 
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin

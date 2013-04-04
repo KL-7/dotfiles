@@ -1,8 +1,7 @@
 ### Aliases ###
 
 # Multiple GitHub accounts support
-export GIT_SSH="$HOME/.scripts/github-ssh"
-alias git="$HOME/.scripts/git-with-email"
+export GIT_SSH="$HOME/.bin/git-ssh"
 
 # General
 alias ls="ls -G"
