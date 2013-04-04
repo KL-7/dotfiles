@@ -1,5 +1,8 @@
 #!/bin/bash
-if [[ $PWD =~ "work/madness" ]] ; then
+
+origin_url=`git config --get remote.origin.url`
+
+if [[ "$origin_url" =~ "git@github.com:ProductMadness" ]] || [[ "$origin_url" =~ "git@github.com:jbrotons" ]] ; then
   git_email=kirill.lashuk@productmadness.com
 else
   git_email=kirill.lashuk@gmail.com
