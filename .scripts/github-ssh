@@ -8,6 +8,6 @@ else
   ssh_key=klashuk_gmail_rsa
 fi
 
-echo "dir=${PWD}, origin_url=${origin_url}, ssh_key=${ssh_key}" >> /tmp/github-ssh.log
+#echo "dir=${PWD}, origin_url=${origin_url}, ssh_key=${ssh_key}" >> /tmp/github-ssh.log
 
 /usr/bin/env ssh -q -2 -o "StrictHostKeyChecking=yes" -i "$HOME/.ssh/$ssh_key" $1 $2
