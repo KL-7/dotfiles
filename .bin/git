@@ -1,6 +1,8 @@
 #!/bin/bash
 
-origin_url=`/usr/local/bin/git config --get remote.origin.url`
+git_command='/usr/local/bin/git'
+
+origin_url=`$git_command config --get remote.origin.url`
 
 if [[ "$origin_url" =~ "git@github.com:ProductMadness" ]] || [[ "$origin_url" =~ "git@github.com:jbrotons" ]] ; then
   git_email=kirill.lashuk@productmadness.com
@@ -8,4 +10,4 @@ else
   git_email=kirill.lashuk@gmail.com
 fi
 
-GIT_AUTHOR_EMAIL=$git_email GIT_COMMITTER_EMAIL=$git_email /usr/local/bin/git "$@"
+GIT_AUTHOR_EMAIL=$git_email GIT_COMMITTER_EMAIL=$git_email $git_command "$@"
