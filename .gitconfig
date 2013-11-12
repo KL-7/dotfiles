@@ -2,6 +2,9 @@
     name = Kirill Lashuk
     email = kirill.lashuk@gmail.com
 
+[diff]
+    renames = true
+
 [alias]
     aa = add --all
     au = add --update
@@ -21,6 +24,7 @@
 [core]
     editor = vim -c start
     excludesfile = ~/.gitexclude
+    preloadindex = true
 
 [diff]
     tool = vimdiff_ro
