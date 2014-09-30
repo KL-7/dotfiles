@@ -19,7 +19,6 @@
     st = status
     sum = log --oneline
     unstage = reset HEAD --
-    wtf = !git-wtf
 
 [core]
     editor = vim -c start
