@@ -3,6 +3,7 @@
     email = kirill.lashuk@gmail.com
 
 [diff]
+    noprefix = true
     renames = true
 
 [alias]
