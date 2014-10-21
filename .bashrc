@@ -22,8 +22,8 @@ alias rakedev="RAILS_ENV=development rake"
 complete -o default -o nospace -F _git g
 
 # Prompt
-export GIT_PS1_SHOWDIRTYSTATE=true
-export GIT_PS1_SHOWUNTRACKEDFILES=true
+export GIT_PS1_SHOWDIRTYSTATE=true # can be disabled per project with git config --add bash.showDirtyState false
+export GIT_PS1_SHOWUNTRACKEDFILES=true # can be disabled per project with git config --add bash.showUntrackedFiles false
 export PS1="\[\033[032m\]\u@\h\[\033[00m\]:\[\033[01;33m\]\W\[\033[036m\]\$(__git_ps1 '[%s]')\[\033[00m\]\$ "
 
 # Git autocompletion
