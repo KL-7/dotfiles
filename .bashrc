@@ -1,8 +1,5 @@
 ### Aliases ###
 
-# Multiple GitHub accounts support
-export GIT_SSH="$HOME/.bin/git-ssh"
-
 # General
 alias ls="ls -G"
 alias ll="ls -lAh"
@@ -21,6 +18,8 @@ alias rakedev="RAILS_ENV=development rake"
 # Completion for git `g` alias.
 complete -o default -o nospace -F _git g
 
+export EDITOR=vim
+
 # Prompt
 export GIT_PS1_SHOWDIRTYSTATE=true # can be disabled per project with git config --add bash.showDirtyState false
 export GIT_PS1_SHOWUNTRACKEDFILES=true # can be disabled per project with git config --add bash.showUntrackedFiles false
@@ -34,5 +33,6 @@ source `brew --prefix git`/etc/bash_completion.d/git-prompt.sh
 shopt -s histappend
 PROMPT_COMMAND="history -a"
 
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+# ANSI colors
+export LESS=' -R '
+
