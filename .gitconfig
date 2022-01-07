@@ -59,5 +59,6 @@
     added = yellow bold
     changed = green bold
     untracked = red bold
+
 [push]
-    default = matching
+    default = current
